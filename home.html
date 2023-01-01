@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css" integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<title>Tech Store</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div>
+           <div class="logo-container">
+                <a href="/home.html" class="logo item"><img src="images/alpha.png" alt="Alpha"></a>
+                <select name="" id="" class="shtetet item">
+                    <option value="Kosovë">Kosovë</option>
+                    <option value="Shqipëri">Shqipëri</option>
+                    <option value="Maqedoni">Maqedoni</option>
+                </select>
+                <!--Pseudo Select-->
+                <select name="" id="width_tmp_select" style="display: none;">
+                    <option value="" id="width_tmp_option"></option>
+                </select>
+                <!--Pseudo Select-->
+                <div style="color:#595e5e;padding:0;margin:0;">
+                    |
+                </div>
+                <div class="gjuha item">
+                    <button class="albanian active" onclick="Albanian()">AL</button>
+                    <button class="english" onclick="English()">EN</button>
+                </div>
+           </div> 
+           <div class="header-links">
+                <li><a href="">About Us</a></li>
+                <div style="color:#595e5e;padding:0;margin:0">|</div>
+                <li><a href="">Today's deals</a></li>
+                <div style="color:#595e5e;padding:0;margin:0">|</div>
+                <li><a href="">Service Center</a></li>
+                <div style="color:#595e5e;padding:0;margin:0">|</div>
+                <li><a href="">Sell</a></li>
+                <div style="color:#595e5e;padding:0;margin:0">|</div>
+                <li><a href="">Trade</a></li>
+                <div style="color:#595e5e;padding:0;margin:0">|</div>
+                <li><a href="">Help</a></li>
+           </div>
+           <div class="contact">
+            <p type="tel" class="phone"><i class="fa-solid fa-phone"></i>&nbsp;+383 49 473 342</p>
+                <a href="" class="sendMessage"><i class="fa-solid fa-message"></i>&nbsp;Send Message</a>
+           </div>
+        </div>
+    </header>
+    <nav class="navigacioni">
+        <div class="shopByCategory">
+            <h5><i class="fa-solid fa-bars"></i>&nbsp;Shop By Category</h5>
+        </div>
+        <div class="searchContainer">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" class="searchInput" placeholder="Search products...">
+            <button type="submit" class="searchButton">Search</button>
+        </div>
+        <div class="userContainer">
+            <a href="" class="userContainerItems heart"><i class="fa-solid fa-heart"></i></a>
+            <a href="" class="userContainerItems cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="account userContainerItems">
+                <img src="images/Diarti.jpg" alt="" class="Accountlogo">
+                <div class="personalInformation">
+                    <p>Diart</p>
+                    <span>23 Points</span>
+                </div>
+                <i class="fa-solid fa-caret-down" onclick="openDropdown()"></i>
+                <div class="profileDropdown" style="display:none">
+                    <li><a href="" class="User"><i class="fa-solid fa-user"></i>&nbsp;Go to profile</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="" class="OrderHistory"><i class="fa-solid fa-clock-rotate-left"></i>&nbsp;Order history</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="" class="Return"><i class="fa-solid fa-right-left"></i>&nbsp;Return order</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <hr>
+                    <li><a href="" class="Logout"><i class="fa-solid fa-right-from-bracket"></i>&nbsp;Log out</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="sidebar">
+                <li><a href=""><i class="bi bi-phone"></i>&nbsp;Smart Phones</a><i class="fa-solid fa-chevron-right"></i></li>
+                <li><a href=""><i class="bi bi-laptop"></i>&nbsp;Laptops</a><i class="fa-solid fa-chevron-right"></i></li>
+                <li><a href=""><i class="bi bi-tablet"></i>&nbsp;Tablets</a><i class="fa-solid fa-chevron-right"></i></li>
+                <li><a href=""><i class="bi bi-smartwatch"></i>&nbsp;Smart Watches</a><i class="fa-solid fa-chevron-right"></i></li>
+                <li><a href=""><i class="bi bi-tv"></i>&nbsp;Television & Video</a><i class="fa-solid fa-chevron-right"></i></li>
+                <li><a href=""><i class="bi bi-house"></i>&nbsp;Smart Home</a><i class="fa-solid fa-chevron-right"></i></li>
+                <li><a href=""><i class="bi bi-router"></i>&nbsp;Networking</a><i class="fa-solid fa-chevron-right"></i></li>
+                <li><a href=""><i class="bi bi-headset"></i>&nbsp;Accessories</a><i class="fa-solid fa-chevron-right"></i></li>
+                <li><a href=""><i class="bi bi-controller"></i>&nbsp;Gaming</a><i class="fa-solid fa-chevron-right"></i></li>
+        </div>
+        <!--Main Content-->
+            <div class="content my-2" style="margin-right:100px;">
+                <!--Slider-->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" style="border-radius:5px;background:#ecf5f5">
+                      <div class="carousel-item active">
+                        <img class="d-block" src="images/Iphone14.png" style="height: 400px;width:430px;" alt="First slide">
+                        <div class="position-absolute" style="z-index:1;right:0px;margin-right:100px;justify-content: center;text-align:right; top:12%;">
+                            <div style="margin-bottom:30px;">
+                            <i class="bi bi-apple" style="font-size:45px;"></i>
+                            </div>
+                            <h3>Explore <b>iPhone 14 Pro Max</b></h3>
+                            <div style="flex-direction: row; justify-content: end;" class="d-flex">
+                                <span class="mx-2 my-2" style="color:gray;">from</span>
+                                <p style="font-size:43px; font-weight:bold">1499 €</p>
+                            </div>
+                            <div style="margin-top:30px">
+                            <a href="" style="background:#3c9b9b; border-radius:15px;text-decoration: none;color: white;padding: 10px 55px 10px 55px;">Buy Now</a>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item" style="z-index:1;background:#507aef">
+                        <img class="d-block" src="images/LegionLenovo2.png" style="margin-left:80px;" alt="Second slide">
+                        <div class="position-absolute" style="z-index:1;right:0px;margin-right:100px;justify-content: center;text-align:right; top:20%;">
+                            <div style="margin-bottom:30px;">
+                            </div>
+                            <h3 style="color:white;">Better Gaming experience with <br><b>Legion Lenovo</b></h3>
+                            <div style="flex-direction: row; justify-content: end;" class="d-flex">
+                                <span class="mx-2 my-2" style="color:white;">from</span>
+                                <p style="font-size:43px; color:white; font-weight:bold">1250 €</p>
+                            </div>
+                            <div style="margin-top:30px">
+                            <a href="" style="background:#f83ffd; border-radius:15px;text-decoration: none;color: white;padding: 10px 55px 10px 55px;">Buy Now</a>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item" style="background:#ff3300;">
+                        <img class="d-block" src="images/JBLH.png" style="margin-left:70px;" alt="Third slide">
+                        <div class="position-absolute" style="z-index:1;right:0px;margin-right:100px;justify-content: center;text-align:right; top:10%;">
+                            <div style="margin-bottom:30px;">
+                            </div>
+                            <h3 style="color:white;"><span style="font-style:italic; font-size:45px;font-family: 'Audiowide', cursive;">Hear the truth</span> <br><b> <span style="font-weight:bolder; font-size:50px;">JBL</span> Live 660NC</b></h3>
+                            <div style="flex-direction: row; justify-content: end;" class="d-flex">
+                                <span class="mx-2 my-2" style="color:white;">from</span>
+                                <p style="font-size:43px; font-weight:bold;color:white;">1250 €</p>
+                            </div>
+                            <div style="margin-top:30px">
+                            <a href="" style="background:black; border-radius:15px;text-decoration: none;color: white;padding: 10px 55px 10px 55px;">Buy Now</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true" style="background-image: none;"><i class="bi bi-chevron-left" style="color:black;font-size: 30px;"></i></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true" style="background-image: none;"><i class="bi bi-chevron-right" style="color:black;font-size:30px"></i></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+                  <div class="marketingLogos my-4" style="display:flex; flex-direction:row; gap:50px;">
+                    <div>
+                        <img src="images/Samsung.png" style="width:141px; height:60px;" alt="">
+                    </div>
+                    <div><img src="https://1000logos.net/wp-content/uploads/2021/05/JBL-logo.png" style="width:106px; height:60px;" alt=""></div>
+                    <div><img src="https://logos-world.net/wp-content/uploads/2020/04/Sony-Logo.png" style="width:106px; height:60px;" alt=""></div>
+                    <div><img src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png" style="width:106px; height:60px;"  alt=""></div>
+                    <div><img src="https://logos-world.net/wp-content/uploads/2020/05/Alienware-Logo.png" style="width:106px; height:60px;" alt=""></div>
+                    <div><img src="https://logos-world.net/wp-content/uploads/2020/11/Logitech-Logo.png" style="width:106px; height:60px;" alt=""></div>
+                  </div>
+            </div>
+    </div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    var albanian = document.querySelector('.albanian');
+    var english = document.querySelector('.english');
+    var profileDropdown = document.querySelector('.profileDropdown');
+    function Albanian(){
+        albanian.classList.add('active');
+        english.classList.remove('active');
+    }
+    function English(){
+        albanian.classList.remove('active');
+        english.classList.add('active');
+    }
+    $(document).ready(function() {
+        $('.shtetet').change(function(){
+            $("#width_tmp_option").html($('.shtetet option:selected').text()); 
+                $(this).width($("#width_tmp_select").width()-7);  
+        });
+    });
+    function openDropdown(){
+       if(profileDropdown.style.display === "none"){
+            profileDropdown.style.display = "block";
+       }
+       else{
+            profileDropdown.style.display = "none";
+       }
+    }
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js" integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</html>
