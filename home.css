@@ -305,7 +305,6 @@ nav .userContainer .account .profileDropdown li:last-child{
     display: flex;
 }
 .main .content{
-    flex: 90%;
     margin-left: 2%;
 }
 
@@ -313,6 +312,7 @@ nav .userContainer .account .profileDropdown li:last-child{
     position: sticky;
     top: 0;
     flex: 40%;
+    white-space: nowrap;
     padding-left:120px;
     height: min-content;
 }
@@ -396,7 +396,7 @@ nav .userContainer .account .profileDropdown li:last-child{
   white-space: nowrap;
 }
 .star i {
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   overflow: hidden;
   color: gold;
