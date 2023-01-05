@@ -1,3 +1,4 @@
+
 *{
     font-family: 'Nunito', sans-serif;
     font-weight:500;
@@ -340,4 +341,25 @@ nav .userContainer .account .profileDropdown li:last-child{
 
 .sidebar li:last-child{
     border: none;
+}
+.cardsContainer .card{
+    width: 35%;
+    background-color: #f3f2f2;
+}
+.cardsContainer .card .container{
+    margin-bottom:5%;
+}
+.cardsContainer1 .card{
+    width: 35%;
+    background-color: #f3f2f2;
+}
+.cardsContainer2 .card {
+    width: 35%;
+    background-color: #f3f2f2;
+}
+.cardsContainer1 .card .container{
+    margin-bottom:5%;
+}
+.cardsContainer2 .card .container{
+    margin-bottom:5%;
 }
