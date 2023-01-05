@@ -376,6 +376,7 @@ nav .userContainer .account .profileDropdown li:last-child{
 }
 
 .cardsContainer .card .container{
+    margin-top: 5%;
     margin-bottom:5%;
     display: flex;
     flex-direction: column;
@@ -383,19 +384,26 @@ nav .userContainer .account .profileDropdown li:last-child{
     align-items: center;
 }
 .cardsContainer .card .container h4{
+   
    text-align: center;
 }
-.cardsContainer1 .card{
-    width: 35%;
-    background-color: #f3f2f2;
+
+.cardsContainer .card .container.star{ width:150px; position: relative;color: #bdbdbd;}
+
+.cardsContainer .card .container .star i {
+  width:60%;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.cardsContainer2 .card {
-    width: 35%;
-    background-color: #f3f2f2;
+.star i {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: gold;
 }
-.cardsContainer1 .card .container{
-    margin-bottom:5%;
-}
-.cardsContainer2 .card .container{
-    margin-bottom:5%;
+.star i :before { 
+  content:"\2606\2606\2606\2606\2606";
+  position: absolute;
+  color: #bdbdbd;
+  z-index: -1;
 }
