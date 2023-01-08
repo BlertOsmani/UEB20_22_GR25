@@ -315,6 +315,7 @@ nav .userContainer .account .profileDropdown li:last-child{
     white-space: nowrap;
     padding-left:120px;
     height: min-content;
+    
 }
 .sidebar li{
     list-style: none;
@@ -383,7 +384,7 @@ nav .userContainer .account .profileDropdown li:last-child{
     justify-content: center;
     align-items: center;
 }
-.cardsContainer .card .container h4{
+.cardsContainer .card .container h5{
    
    text-align: center;
 }
