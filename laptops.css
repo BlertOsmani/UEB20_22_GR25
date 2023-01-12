@@ -1,19 +1,23 @@
-.Lmain{
+.main{
     display: flex;
 }
-.Lmain .content{
-    margin-left: 2%;
+.main .content{
+    margin-left: 2rem;
+    float:left;
+    width:66%;
+    margin-right: 6.5rem;
 }
 
-.Lmain .Lsidebar{
+.main .sidebar{
     position: sticky;
     top: 0;
-    flex: 20%;
+    width: 34%;
+    float: left;
     white-space: nowrap;
     padding-left:120px;
     height: min-content;
 }
-.Lsidebar li{
+.sidebar li{
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -21,14 +25,14 @@
     align-items: center;
     border-bottom: 1px solid #f0f0f0;
 }
-.Lsidebar li:first-child{
+.sidebar li:first-child{
     padding-top:30px;
 }
-.Lsidebar li .fa-chevron-right{
+.sidebar li .fa-chevron-right{
     color:lightgray;
     cursor: pointer;
 }
-.Lsidebar li a{
+.sidebar li a{
     padding: 10px 10px 10px 0;
     width:100%;
     text-decoration: none;
@@ -36,29 +40,29 @@
     font-size: large;
 }
 
-.Lsidebar li:last-child{
+.sidebar li:last-child{
     border: none;
 }
-.LcardsContainer{
+.cardsContainer{
     flex:75%;
 }
-.LcardsContainer .Lcards{
+.cardsContainer .cards{
     width: 25%;
     border:none;
 }
-.LcardsContainer .Lcard .LcardImage{
+.LcardsContainer .card .cardImage{
     background-color:#f3f2f2;
 }
-.LcardsContainer .Lcard .LcardImage img{
+.LcardsContainer .card .cardImage img{
     padding: 45px;
     cursor: pointer;
 }
-.LcardsContainer .Lcard .LcardImage button{
+.LcardsContainer .card .cardImage button{
     width: 100%;
     border-radius: none;
     visibility: hidden;
 }
-.LcardsContainer .Lcard .LcardImage i{
+.cardsContainer .card .cardImage i{
     position:absolute;
     top:10px;
     right: 10px;
@@ -66,15 +70,15 @@
     visibility: hidden;
     cursor: pointer;
 }
-.LcardsContainer .Lcard .LcardImage:hover button {
+.cardsContainer .card .cardImage:hover button {
     padding: 45px;
     visibility: visible;
 }
-.LcardsContainer .Lcard .LcardImage:hover i {
+.cardsContainer .card .cardImage:hover i {
     visibility: visible;
 }
 
-.LcardsContainer .Lcard .Lcontainer{
+.cardsContainer .card .container{
     margin-top: 5%;
     margin-bottom:5%;
     display: flex;
@@ -82,25 +86,24 @@
     justify-content: center;
     align-items: center;
 }
-.LcardsContainer .Lcard .Lcontainer h5{
-   
+.cardsContainer .card .container h5{
     text-align: center;
  }
  
- .LcardsContainer .Lcard .Lcontainer .Lstar{  position: relative;color: #bdbdbd;}
+ .cardsContainer .card .container .star{  position: relative;color: #bdbdbd;}
  
- .LcardsContainer .Lcard .Lcontainer .Lstar i {
+ .cardsContainer .card .container .Lstar i {
    width:60%;
    overflow: hidden;
    white-space: nowrap;
  }
- .Lstar i {
+ .star i {
    font-size: 12px;
    white-space: nowrap;
    overflow: hidden;
    color: gold;
  }
- .Lstar i :before { 
+ .star i :before { 
    content:"\2606\2606\2606\2606\2606";
    position: absolute;
    color: #bdbdbd;
