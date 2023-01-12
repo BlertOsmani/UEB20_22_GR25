@@ -305,13 +305,26 @@ nav .userContainer .account .profileDropdown li:last-child{
     display: flex;
 }
 .main .content{
-    margin-left: 2%;
+    margin-left: 2rem;
+    float:left;
+    width:66%;
+    margin-right: 6.5rem;
 }
 
 .main .sidebar{
     position: sticky;
     top: 0;
-    flex: 40%;
+    width: 34%;
+    float: left;
+    white-space: nowrap;
+    padding-left:120px;
+    height: min-content;
+}
+.main .sidebarL{
+    position: sticky;
+    top: 0;
+    width: 40%;
+    float: left;
     white-space: nowrap;
     padding-left:120px;
     height: min-content;
@@ -346,6 +359,7 @@ nav .userContainer .account .profileDropdown li:last-child{
     width: 25%;
     border:none;
 }
+
 
 .cardsContainer .card .cardImage{
     background-color:#f3f2f2;
