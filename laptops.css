@@ -1,3 +1,305 @@
+
+*{
+    font-family: 'Nunito', sans-serif;
+    font-weight:500;
+    margin:0;
+    padding:0;
+}
+.header{
+    background-color: #1f1f21;
+}
+.header div{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top:15px;
+    padding-bottom:5px;
+}
+/*Fillimi i pjeses se logos*/
+.header div .logo-container .item{
+    margin:5px;
+}
+.header div .logo-container .logo{
+    margin:5px;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: 800;
+    padding:5px;
+}
+.header div .logo-container .logo img{
+   width:160px;
+}
+
+.header div .logo-container .gjuha{
+    padding:0;
+}
+.header div .logo-container .gjuha .albanian{
+    background: none;
+    border:none;
+    color: #595e5e;
+    margin-right: 2.5px;
+    cursor:pointer;
+    font-size:14px;
+}
+.header div .logo-container .gjuha button.active{
+    border-bottom: 2px solid #94a8b3;
+    color:white;
+}
+.header div .logo-container .gjuha .english{
+    background: none;
+    border:none;
+    color: #595e5e;
+    margin-left:2.5px;  
+    cursor:pointer;
+    font-size:14px;
+}
+.header div .logo-container .shtetet{
+    background:none;
+    border: none;
+    color: white; 
+    width: 70px;
+    border-radius: 5px;
+    font-size:14px;  
+    margin:0;
+    padding:0;  
+    outline:none;
+    cursor: pointer;
+}
+.header div .logo-container .shtetet option{
+    color:white;
+    background-color: #212121;
+    border-radius: 5px;
+    border:none;
+}
+.header div .logo-container .shtetet option:hover{
+    background-color: #595e5e;
+    cursor: pointer;
+
+}
+
+/*Perfundimi i pjeses se logos*/
+
+/*Fillimi i header-links*/
+.header div .header-links li{
+    list-style-type: none;
+    margin-left: 10px;
+    margin-right:10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.header div .header-links li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+    font-size: 14px;
+}
+.header div .header-links li a:hover{
+    font-size: 15px;
+    color:#3c9b9b; 
+    transition: 0.3s ease-in-out;
+}
+/*Perfundimi i pjeses se header-linqeve*/
+
+.header div .contact .phone{
+    background:none;
+    border:none;
+    color:white;
+    font-size:14px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom:0;
+}
+.header div .contact .sendMessage{
+    text-decoration: none;
+    color:white;
+    margin-left:20px;
+    font-size:14px;
+}
+
+/*Navbar*/
+
+.navigacioni{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #28272c;
+    padding: 10px;
+    padding-left:7.5rem;
+    padding-right: 6.25rem;
+    align-items: center;
+}
+nav .shopByCategory{
+    color: white;
+}
+nav .shopByCategory h5 i{
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+nav .shopByCategory h5{
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+nav .searchContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position:relative;
+    left:1.8rem;
+}
+
+nav .searchContainer .searchInput{
+    padding: 7px;
+    width: 555px;
+    border-radius: 12px;
+    padding-left: 50px;
+    background-color: #3d3c41;
+    color: white;
+    border:none;
+}
+nav .searchContainer i{
+    color: white;
+    font-size:20px;
+    position: absolute;
+    margin-left: 15px;
+}
+nav .searchContainer .searchInput:focus{
+    outline:none; 
+}
+nav .searchContainer .searchButton{
+    background: #3c9b9b;
+    border:none;
+    color: white;
+    position: absolute;
+    z-index:1;
+    padding: 4px 12px;
+    border-radius: 10px;
+    margin-left: 86.4%;
+    border-bottom: 3px solid #2a6d6d;
+}
+nav .searchContainer .searchButton:active{
+    border-bottom: none;
+}
+
+nav .userContainer{
+    color:white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav .userContainer .account{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav .userContainer .account .Accountlogo{
+    border-radius: 360px;
+    width:40px;
+    height: 40px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+nav .userContainer .account .personalInformation{
+    height: 40px;
+}
+
+nav .userContainer .account .personalInformation p{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    cursor: pointer;
+}
+nav .userContainer .account .personalInformation span{
+    font-size: 10px;    
+    opacity: 0.5;
+    padding:0;
+    margin: 0;
+    position: absolute;
+    width:auto;
+    width: 60px;
+}
+nav .userContainer .account i{
+    cursor: pointer;
+}
+
+nav .userContainer .userContainerItems{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+nav .userContainer a{
+    font-size: 20px;
+    color: white;
+}
+nav .userContainer .heart:hover{
+    color: red;
+}
+nav .userContainer .cart:hover{
+    color :#1877F2;
+}
+
+nav .userContainer .account .profileDropdown{
+    position: absolute;
+    z-index: 2;
+    width: 300px;
+    background-color: white;
+    right:100px;
+    margin-top: 285px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 12px;
+}
+
+nav .userContainer .account .profileDropdown li{
+    list-style: none;
+    /*padding: 10px 15px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+nav .userContainer .account .profileDropdown li a{
+    color: black;
+    text-decoration: none;
+    font-size:18px;
+    width: 100%;
+    padding:10px 15px;
+}
+nav .userContainer .account .profileDropdown li i{
+    color: black;
+    text-decoration: none;
+    font-size:18px;
+    padding: 10px 15px;
+
+}
+nav .userContainer .account .profileDropdown li a i{
+    background-color: #dedcde;
+    padding:8px;
+    border-radius: 360px;
+    color: black;
+}
+nav .userContainer .account .profileDropdown hr{
+    background-color: gray;
+    height: 2px;
+    margin-left:15px;
+    margin-right: 15px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+nav .userContainer .account .profileDropdown li:hover{
+    background-color: #f5f5f5;
+}
+nav .userContainer .account .profileDropdown li:first-child{
+    border-radius: 12px 12px 0 0 ;
+}
+nav .userContainer .account .profileDropdown li:last-child{
+    border-radius: 0 0 12px 12px ;
+}
+
+/* Main */
 .main{
     display: flex;
 }
@@ -43,21 +345,21 @@
 .sidebar li:last-child{
     border: none;
 }
-.cardsContainer{
-    flex:75%;
-}
-.cardsContainer .cards{
+.cardsContainer .card{
     width: 25%;
     border:none;
 }
-.LcardsContainer .card .cardImage{
+
+
+.cardsContainer .card .cardImage{
     background-color:#f3f2f2;
 }
-.LcardsContainer .card .cardImage img{
+.cardsContainer .card .cardImage img{
     padding: 45px;
     cursor: pointer;
+    transition:0.3s ease;
 }
-.LcardsContainer .card .cardImage button{
+.cardsContainer .card .cardImage button{
     width: 100%;
     border-radius: none;
     visibility: hidden;
@@ -77,6 +379,10 @@
 .cardsContainer .card .cardImage:hover i {
     visibility: visible;
 }
+.cardsContainer .card .cardImage:hover img{
+    padding:40px;
+    transition:0.3s ease;
+}
 
 .cardsContainer .card .container{
     margin-top: 5%;
@@ -87,25 +393,26 @@
     align-items: center;
 }
 .cardsContainer .card .container h5{
-    text-align: center;
- }
- 
- .cardsContainer .card .container .star{  position: relative;color: #bdbdbd;}
- 
- .cardsContainer .card .container .Lstar i {
-   width:60%;
-   overflow: hidden;
-   white-space: nowrap;
- }
- .star i {
-   font-size: 12px;
-   white-space: nowrap;
-   overflow: hidden;
-   color: gold;
- }
- .star i :before { 
-   content:"\2606\2606\2606\2606\2606";
-   position: absolute;
-   color: #bdbdbd;
-   z-index: -1;
- }
+   
+   text-align: center;
+}
+
+.cardsContainer .card .container.star{ width:150px; position: relative;color: #bdbdbd;}
+
+.cardsContainer .card .container .star i {
+  width:60%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.star i {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: gold;
+}
+.star i :before { 
+  content:"\2606\2606\2606\2606\2606";
+  position: absolute;
+  color: #bdbdbd;
+  z-index: -1;
+}

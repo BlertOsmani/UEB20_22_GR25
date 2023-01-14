@@ -2,6 +2,8 @@
     var albanian = document.querySelector('.albanian');
     var english = document.querySelector('.english');
     var profileDropdown = document.querySelector('.profileDropdown');
+    var laptops = document.getElementById('laptops');
+
     function Albanian(){
         albanian.classList.add('active');
         english.classList.remove('active');
@@ -23,4 +25,9 @@
        else{
             profileDropdown.style.display = "none";
        }
+    }
+
+    if(document.location == "http://127.0.0.1:5500/laptops.html"){
+         laptops.style.color = "#3c9b9b"; 
+         laptops.style.fontWeight = 'bold'; 
     }
