@@ -7,25 +7,25 @@
 }
 .header{
     background-color: #1f1f21;
+    padding:0 6.5rem;
+    margin: 0;
 }
 .header div{
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding-top:15px;
-    padding-bottom:5px;
+    padding-top:20px;
+    margin:0;
+    white-space: nowrap;
+    padding-bottom:10px;
 }
 /*Fillimi i pjeses se logos*/
-.header div .logo-container .item{
-    margin:5px;
-}
+
 .header div .logo-container .logo{
-    margin:5px;
     margin-right: 15px;
     text-decoration: none;
     font-weight: 800;
-    padding:5px;
 }
 .header div .logo-container .logo img{
    width:160px;
@@ -117,6 +117,8 @@
     font-size:14px;
 }
 
+
+
 /*Navbar*/
 
 .navigacioni{
@@ -124,10 +126,9 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: #28272c;
-    padding: 10px;
-    padding-left:7.5rem;
-    padding-right: 6.25rem;
+    padding: 10px 6.5rem;
     align-items: center;
+    white-space: nowrap;
 }
 nav .shopByCategory{
     color: white;
@@ -147,7 +148,7 @@ nav .searchContainer{
     flex-direction: row;
     align-items: center;
     position:relative;
-    left:1.8rem;
+    left:1.9rem;
 }
 
 nav .searchContainer .searchInput{
@@ -302,21 +303,20 @@ nav .userContainer .account .profileDropdown li:last-child{
 /* Main */
 .main{
     display: flex;
+    flex-direction: row;
+    padding:0rem 6.5rem;
+    justify-content: space-between;
 }
 .main .content{
-    margin-left: 2rem;
-    float:left;
-    width:66%;
-    margin-right: 6.5rem;
+    flex:60%;
+    margin-left: 4.5rem;
 }
 
 .main .sidebar{
     position: sticky;
     top: 0;
-    width: 34%;
-    float: left;
+    flex:15%;
     white-space: nowrap;
-    padding-left:120px;
     height: min-content;
 }
 .sidebar li{

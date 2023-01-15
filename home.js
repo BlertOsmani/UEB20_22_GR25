@@ -26,8 +26,3 @@
             profileDropdown.style.display = "none";
        }
     }
-
-    if(document.location == "http://127.0.0.1:5500/laptops.html"){
-         laptops.style.color = "#3c9b9b"; 
-         laptops.style.fontWeight = 'bold'; 
-    }
