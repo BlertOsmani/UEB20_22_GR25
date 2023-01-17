@@ -3,6 +3,8 @@
     var english = document.querySelector('.english');
     var profileDropdown = document.querySelector('.profileDropdown');
     var laptops = document.getElementById('laptops');
+    var sidebar = document.querySelector('.sidebar');
+    var sidebarBtn = document.querySelector('.sidebarBtn');
 
     function Albanian(){
         albanian.classList.add('active');
@@ -26,3 +28,9 @@
             profileDropdown.style.display = "none";
        }
     }
+    $('.sidebarBtn').on('click', function(){
+        $('.sidebar li a span').toggle(300);
+        $('.sidebar li .fa-chevron-right').toggle(300);
+        $('.sidebar').toggleClass('toggleSidebar');
+    })
+
