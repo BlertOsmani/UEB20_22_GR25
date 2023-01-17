@@ -310,16 +310,29 @@ nav .userContainer .account .profileDropdown li:last-child{
 }
 .main .content{
     flex:60%;
-    margin-left: 4.5rem;
 }
 
 .main .sidebar{
-    position: sticky;
-    top: 0;
-    flex:15%;
+    position:sticky;
+    top:30px;
+    margin-top:30px;
+    margin-right: 4.5rem;
     white-space: nowrap;
     height: min-content;
+    width: 324.59px;
 }
+.main .toggleSidebar{
+    transition: 0.2s ease-in;
+    width:30px;
+    margin-right: 4.5rem;
+    border-right: 1px solid gray;
+}
+
+.sidebar li a span{
+    display: inline-flex;
+}
+
+
 .sidebar li{
     list-style: none;
     display: flex;
@@ -328,9 +341,7 @@ nav .userContainer .account .profileDropdown li:last-child{
     align-items: center;
     border-bottom: 1px solid #f0f0f0;
 }
-.sidebar li:first-child{
-    padding-top:30px;
-}
+
 .sidebar li .fa-chevron-right{
     color:lightgray;
     cursor: pointer;
