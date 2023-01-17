@@ -367,7 +367,7 @@ nav .userContainer .account .profileDropdown li:last-child{
     background-color:#f3f2f2;
 }
 .cardsContainer .card .cardImage img{
-    padding: 25px;
+    padding: 30px;
     cursor: pointer;
     transition:0.3s ease;
 
@@ -394,7 +394,7 @@ nav .userContainer .account .profileDropdown li:last-child{
     visibility: visible;
 }
 .cardsContainer .card .cardImage:hover img{
-    padding:40px;
+    padding:25px;
     transition:0.3s ease;
 }
 

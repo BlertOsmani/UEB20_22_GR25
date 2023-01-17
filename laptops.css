@@ -1,14 +1,18 @@
 .main .Lsidebar{
     position: sticky;
-    top: 0;
+    top: 30px;
     flex:15%;
+    margin-top:30px;
     white-space: nowrap;
     height: min-content;
+    overflow-y:scroll;
+    margin-right:4.5rem;
 
 }
-.Lsidebar h5{
-    padding-top: 30px;
+.Lsidebar .Filter1 .cpu h5{
+    padding-top:20px;
 }
+
 .Lsidebar li{
     list-style: none;
     display: flex;
@@ -19,15 +23,13 @@
     padding-bottom: none;
 }
 .Lsidebar .Filter1 li{
-    font-size: 12.5px;
+    font-size: 14px;
 }
 
 .wrapper{
     width: 270px;
     background: #fff;
     border-radius: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
 }
 .wrapper header h5{
     font-weight: 600;
@@ -118,11 +120,10 @@ input[type="range"]::-webkit-slider-thumb{
     appearance: none;
     background: #3c9b9b ;
 }
-.main .Lsidebar .Filter1{
-    display: flex;
-    flex-direction: row;
-    
+.Filter1 div h5{
+    font-weight:bold;
 }
+
 .Filter1 .company{
-    margin-right: 20px;
+    margin-right: 0px;
 }
