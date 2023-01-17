@@ -1,0 +1,143 @@
+.header div .smallScreenContainer{
+    width:0px;
+    height: 100%;
+    visibility: hidden;
+    position: fixed;
+    display: inline-block;
+    flex-direction: column;
+    z-index:16;
+    background-color: #1f1f21;
+    height:100%;
+    top:0;
+    right:0;
+    transition:0.1s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.header div .smallScreenContainer .headerSearchContainer{
+    flex-direction: row;
+    align-items: center;
+    position:relative;
+    margin-top:30px;
+}
+.header div .smallScreenContainer .small-header-links{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.header div .smallScreenContainer .small-header-links li{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.header div .smallScreenContainer .small-header-links li a{
+    font-size:18px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.header div .smallScreenContainer .small-header-links li a:hover{
+    font-size:20px;
+    color: white;
+}
+
+.header div .smallScreenContainer .headerSearchContainer .searchInput{
+    padding: 7px;
+    width: 555px;
+    border-radius: 12px;
+    padding-left: 50px;
+    background-color: rgb(61, 60, 65);
+    color: white;
+    border:none;
+}
+.header div .smallScreenContainer .headerSearchContainer i{
+    color: white;
+    font-size:20px;
+    position: absolute;
+    margin-left: 15px;
+}
+.header div .smallScreenContainer .headerSearchContainer .searchInput:focus{
+    outline:none; 
+}
+.header div .smallScreenContainer .headerSearchContainer .searchButton{
+    background: #3c9b9b;
+    border:none;
+    color: white;
+    position: absolute;
+    z-index:1;
+    padding: 4px 12px;
+    border-radius: 10px;
+    margin-left: 78%;
+    border-bottom: 3px solid #2a6d6d;
+}
+.header div .smallScreenContainer .headerSearchContainer .searchButton:active{
+    border-bottom: none;
+}
+
+.header div .mainMenu{
+    display: inline-block;
+    flex-direction: column;
+    position:fixed;
+    z-index:16;
+    background-color: #1f1f21;
+    height:100%;
+    top:0;
+    padding:5px;
+    right:0;
+    width:400px;
+    padding:30px;
+    visibility: visible;
+    transition:0.1s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.header div .mainMenu .small-header-links{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.header div .mainMenu .small-header-links li{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.header div .mainMenu .small-header-links li a{
+    font-size:18px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.header div .mainMenu .small-header-links li a:hover{
+    font-size:20px;
+    color: white;
+}
+
+.header div .smallScreenContainer .small-contact{
+    bottom:20px;
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header div .smallScreenContainer .small-contact p{
+    margin:0;
+    color: white;
+}
+.header div .smallScreenContainer .small-contact a{
+   text-decoration: none;
+   color:white;
+   margin-left: 70px;
+}
+.header div .smallScreenContainer .closeMainMenu .closeMainMenuBtn{
+    color:white;
+ }
+
+

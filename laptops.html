@@ -11,14 +11,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="homeSmallScreen.css">
     <link rel="stylesheet" href="laptops.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <title>Tech Store</title>
 </head>
@@ -45,6 +50,38 @@
                     <button class="english" onclick="English()">EN</button>
                 </div>
            </div> 
+           <div class="openHeaderContainer">
+            <i class="fa-solid fa-bars openMainMenu" style="font-size:20px; color:white;cursor: pointer;"></i>
+          </div>
+           <!--This container opens for small screens-->
+        <div class="smallScreenContainer">
+          <div class="closeMainMenu">
+            <i class="bi bi-x-lg closeMainMenuBtn" style="font-size:30px;cursor: pointer;position: absolute;left:50%; "></i>
+          </div>
+          <div class="headerSearchContainer">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" class="searchInput" placeholder="Search products...">
+            <button type="submit" class="searchButton">Search</button>
+          </div>
+          <div class="small-header-links">
+            <li><a href="">About Us</a></li>
+            <div style="color:#595e5e;padding:0;margin:0"></div>
+            <li><a href="">Today's deals</a></li>
+            <div style="color:#595e5e;padding:0;margin:0"></div>
+            <li><a href="">Service Center</a></li>
+            <div style="color:#595e5e;padding:0;margin:0"></div>
+            <li><a href="">Sell</a></li>
+            <div style="color:#595e5e;padding:0;margin:0"></div>
+            <li><a href="">Trade</a></li>
+            <div style="color:#595e5e;padding:0;margin:0"></div>
+            <li><a href="">Help</a></li>
+       </div>
+       <div class="small-contact">
+        <p type="tel" class="phone"><i class="fa-solid fa-phone"></i>&nbsp;+383 49 473 342</p>
+        <a href="" class="sendMessage"><i class="fa-solid fa-message"></i>&nbsp;Send Message</a>
+       </div>
+      </div>
+      <!---->
            <div class="header-links">
                 <li><a href="">About Us</a></li>
                 <div style="color:#595e5e;padding:0;margin:0">|</div>
@@ -393,6 +430,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js" integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="home.js"></script>
+<script src="home.js" defer></script>
 
 </html>
