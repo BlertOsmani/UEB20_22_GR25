@@ -5,6 +5,7 @@
     var laptops = document.getElementById('laptops');
     var sidebar = document.querySelector('.sidebar');
     var sidebarBtn = document.querySelector('.sidebarBtn');
+    var smallScreenContainer = document.getElementById('smallScreenContainer');
 
     function Albanian(){
         albanian.classList.add('active');
@@ -34,3 +35,14 @@
         $('.sidebar').toggleClass('toggleSidebar');
     })
 
+    $('.openMainMenu').on('click', function(){
+        $('.smallScreenContainer').toggleClass('mainMenu');
+    })
+    $('.closeMainMenu').on('click', function(){
+        $('.smallScreenContainer').removeClass('mainMenu');
+    })
+
+
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));

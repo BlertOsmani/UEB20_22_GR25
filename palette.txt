@@ -7,3 +7,4 @@ Ngjyrat
 #dcd3c9 krem
 #28272c e hinta e navit
 #3c9b9b e gjelber
+#1f1f21 e zeza e header
