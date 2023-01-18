@@ -38,11 +38,9 @@ rangeInput.forEach(input =>{
          }
     })
 })
-
-
-$('.togglePhoneFilters').on('click', function(){
-    $('.SPsidebar').toggleClass('togglePhones');
+$('.toggleTVFilters').on('click', function(){
+    $('.TVsidebar').toggleClass('toggleTV');
 })
 $('.closeWatchFiltersBtn').on('click', function(){
-    $('.SPsidebar').toggleClass('togglePhones');
+    $('.TVsidebar').toggleClass('toggleTV');
 })
