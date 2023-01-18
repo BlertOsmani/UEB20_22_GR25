@@ -38,3 +38,10 @@ rangeInput.forEach(input =>{
          }
     })
 })
+
+$('.togglePhoneFilters').on('click', function(){
+    $('.SPsidebar').toggleClass('togglePhones');
+})
+$('.closePhoneFiltersBtn').on('click', function(){
+    $('.SPsidebar').toggleClass('togglePhones');
+})

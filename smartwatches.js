@@ -38,3 +38,10 @@ rangeInput.forEach(input =>{
          }
     })
 })
+
+$('.toggleSmartWatchFilters').on('click', function(){
+    $('.SWsidebar').toggleClass('toggleWatches');
+})
+$('.closeWatchFiltersBtn').on('click', function(){
+    $('.SWsidebar').toggleClass('toggleWatches');
+})

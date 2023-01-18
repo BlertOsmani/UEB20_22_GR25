@@ -1,14 +1,24 @@
 .main .SWsidebar{
     position: sticky;
     top: 30px;
-    flex:15%;
+    width:324.59px;
     margin-top:30px;
     white-space: nowrap;
-    height: 400px;
-    overflow-y:scroll;
+    height: 500px;
+    overflow-y:auto;
     margin-right:4.5rem;
+    transition: 0.3s ease;
 
 }
+.main .toggleWatches{
+    position: sticky;
+    top: 30px;
+    width: 0;
+    margin-right: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
 .SWsidebar .Filter1 .cpu h5{
     padding-top:20px;
 }
@@ -32,14 +42,11 @@
 
 .wrapper{
     width: 270px;
-    background: #fff;
     border-radius: 10px;
 }
 .wrapper header h5{
     font-weight: 600;
     padding-top: 20px;
-   
-
 }
 .wrapper header p{
     margin-top: 2px;
@@ -130,4 +137,82 @@ input[type="range"]::-webkit-slider-thumb{
 
 .Filter1 .company{
     margin-right: 0px;
+}
+
+.Display{
+    padding-bottom:30px;
+}
+.Display h5{
+    font-weight: bold;
+}
+
+
+.Display li{
+   font-size:14px;
+}
+.SWsidebar .closeWatchFilters{
+    display: none;
+}
+
+
+/*Search in nav*/
+
+nav .searchContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position:relative;
+    left:5rem;
+}
+
+nav .searchContainer .searchInput{
+    padding: 7px;
+    width: 555px;
+    border-radius: 12px;
+    padding-left: 50px;
+    background-color: #3d3c41;
+    color: white;
+    border:none;
+}
+nav .searchContainer i{
+    color: white;
+    font-size:20px;
+    position: absolute;
+    margin-left: 15px;
+}
+nav .searchContainer .searchInput:focus{
+    outline:none; 
+}
+nav .searchContainer .searchButton{
+    background: #3c9b9b;
+    border:none;
+    color: white;
+    position: absolute;
+    z-index:1;
+    padding: 4px 12px;
+    border-radius: 10px;
+    margin-left: 86.4%;
+    border-bottom: 3px solid #2a6d6d;
+}
+nav .searchContainer .searchButton:active{
+    border-bottom: none;
+}
+
+@media (max-width:1200px){
+    .main .SWsidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background:#f5f5f5;
+        z-index:1;
+        margin: 0;
+        padding: 10px;
+    }
+    .SWsidebar .closeWatchFilters{
+        display: flex;
+        justify-content: center;
+        margin-top:15px;
+        margin-bottom:30px;
+    }
 }

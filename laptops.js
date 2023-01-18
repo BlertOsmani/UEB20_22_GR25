@@ -38,3 +38,12 @@ rangeInput.forEach(input =>{
          }
     })
 })
+
+$('.toggleLaptopFilters').on('click', function(){
+    $('.Lsidebar').toggleClass('toggleLaptops');
+})
+$('.closeLaptopFiltersBtn').on('click', function(){
+    $('.Lsidebar').toggleClass('toggleLaptops');
+})
+
+

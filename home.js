@@ -34,6 +34,11 @@
         $('.sidebar li .fa-chevron-right').toggle(300);
         $('.sidebar').toggleClass('toggleSidebar');
     })
+    $('.closeSideBarBtn').on('click', function(){
+        $('.sidebar li a span').toggle(300);
+        $('.sidebar li .fa-chevron-right').toggle(300);
+        $('.sidebar').toggleClass('toggleSidebar');
+    })
 
     $('.openMainMenu').on('click', function(){
         $('.smallScreenContainer').toggleClass('mainMenu');
