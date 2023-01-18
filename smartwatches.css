@@ -165,39 +165,6 @@ nav .searchContainer{
     left:5rem;
 }
 
-nav .searchContainer .searchInput{
-    padding: 7px;
-    width: 555px;
-    border-radius: 12px;
-    padding-left: 50px;
-    background-color: #3d3c41;
-    color: white;
-    border:none;
-}
-nav .searchContainer i{
-    color: white;
-    font-size:20px;
-    position: absolute;
-    margin-left: 15px;
-}
-nav .searchContainer .searchInput:focus{
-    outline:none; 
-}
-nav .searchContainer .searchButton{
-    background: #3c9b9b;
-    border:none;
-    color: white;
-    position: absolute;
-    z-index:1;
-    padding: 4px 12px;
-    border-radius: 10px;
-    margin-left: 86.4%;
-    border-bottom: 3px solid #2a6d6d;
-}
-nav .searchContainer .searchButton:active{
-    border-bottom: none;
-}
-
 @media (max-width:1200px){
     .main .SWsidebar{
         position: fixed;
