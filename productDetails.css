@@ -1,0 +1,17 @@
+.productName h1 {
+    font-weight: bolder;
+    font-size:60px;
+}
+.colorsContainer .colors{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+}
+.actions{
+    margin-top: 30px;
+    
+}
+.details{
+    margin-top: 50px;
+}
