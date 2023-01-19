@@ -1,0 +1,24 @@
+.productName h1 {
+    font-size: 60px;
+    font-weight: bolder;
+}
+.star i{
+    font-size: 20px;
+
+}
+.colorsContainer .colors{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+
+
+
+}
+.actions{
+    margin-top: 50px;
+    
+}
+.details{
+    margin-top: 50px;
+}
