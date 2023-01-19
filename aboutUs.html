@@ -47,12 +47,44 @@
                         </div>
                         <div class="gjuha item">
                             
-                        <button class="english active" onclick="English()">EN</button>
-                        <button class="albanian" onclick="Albanian()">AL</button>
+                        <button class="albanian active" onclick="Albanian()">AL</button>
+                        <button class="english " onclick="English()">EN</button>
+                        
                         </div>
                 </div> 
+                <div class="openHeaderContainer">
+                    <i class="fa-solid fa-bars openMainMenu" style="font-size:20px; color:white;cursor: pointer;"></i>
+                  </div>
+                  <!--This container opens for small screens-->
+                <div class="smallScreenContainer">
+                  <div class="closeMainMenu">
+                    <i class="bi bi-x-lg closeMainMenuBtn" style="font-size:30px;cursor: pointer;position: absolute;left:50%; "></i>
+                  </div>
+                  <div class="headerSearchContainer">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" class="searchInput" placeholder="Search products...">
+                    <button type="submit" class="searchButton">Search</button>
+                  </div>
+                  <div class="small-header-links">
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <div style="color:#595e5e;padding:0;margin:0"></div>
+                    <li><a href="">Today's deals</a></li>
+                    <div style="color:#595e5e;padding:0;margin:0"></div>
+                    <li><a href="">Service Center</a></li>
+                    <div style="color:#595e5e;padding:0;margin:0"></div>
+                    <li><a href="">Sell</a></li>
+                    <div style="color:#595e5e;padding:0;margin:0"></div>
+                    <li><a href="">Trade</a></li>
+                    <div style="color:#595e5e;padding:0;margin:0"></div>
+                    <li><a href="">Help</a></li>
+               </div>
+               <div class="small-contact">
+                <p type="tel" class="phone"><i class="fa-solid fa-phone"></i>&nbsp;+383 49 473 342</p>
+                <a href="" class="sendMessage"><i class="fa-solid fa-message"></i>&nbsp;Send Message</a>
+               </div>
+              </div>
                 <div class="header-links">
-                        <li><a href="">About Us</a></li>
+                        <li><a href="aboutUs.html">About Us</a></li>
                         <div style="color:#595e5e;padding:0;margin:0">|</div>
                         <li><a href="">Today's deals</a></li>
                         <div style="color:#595e5e;padding:0;margin:0">|</div>
@@ -71,7 +103,7 @@
                 </div>
             </header>
             <nav class="navigacioni">
-                <div class="shopByCategory">
+                <div class="shopByCategory" style="visibility: hidden;">
                     <h5><i class="fa-solid fa-bars"></i>&nbsp;Shop By Category</h5>
                 </div>
                 <div class="searchContainer">
@@ -99,57 +131,159 @@
                     </div>
                 </div>
             </nav>
-            
-    <div class="main">
-        <div class="content my-5">
-            <div class="pjesa1 row" style="margin-top:50px;margin-bottom:100px;">
-                <!--Pjesa 1 e aboutUs-->
-                <div class="col-9">
-                    <h1>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.</h1>
-                </div>
-                <div class="col-3">
-                    <p>
-                        Untitled is a technology company that
-                        builds infrastucture for your startup, so
-                        you don't have to.Bussinesses of every
-                        size--from new startups to public
-                        companies--use our software to manage
-                        their businesses.
-                    </p>
-                </div>
-            </div>
-            <div class="pjesa2" style="margin-top:30px;">
-                <!-- Pjesa 2 e aboutUS-->
-                <div class="row">
-                    <div class="col">
-                        <h1 style="border-bottom:2px solid black; color:#3c9b9b">400+</h2>
-                        <b>Brands</b>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="col">
-                        <h1 style="border-bottom:2px solid black; color:#3c9b9b">600%</h2>
-                        <b>Quality</b>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="col">
-                        <h1 style="border-bottom:2px solid black; color:#3c9b9b">10K+</h2>
-                        <b>Products</b>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="col">
-                        <h1 style="border-bottom:2px solid black; color:#3c9b9b">300+</h2>
-                        <b>Costumers</b>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
 
+            <div class="main">
+                <div class="content my-5">
+                    <div class="pjesa1 row">
+                        <div class="col-9">
+                            <h1>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Quas necessitatibus</h1>
+                        </div>
+                        <div class="col-3">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quis fuga cupiditate excepturi ipsum quidem. Vero nulla rem sit totam assumenda nobis quidem temporibus, hic saepe fugit error dignissimos corporis.</p>
+                        </div>
+                    </div>
+                    <div class="pjesa2 row" style="margin-top:130px;">
+                        <div class="col">
+                            <h1 style="border-bottom:2px solid #3c9b9b;color:#3c9b9b">400+</h1>
+                            <b>Brands</b>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="col">
+                            <h1 style="border-bottom:2px solid #3c9b9b;color:#3c9b9b">100%</h1>
+                            <b>Quality</b>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="col">
+                            <h1 style="border-bottom:2px solid #3c9b9b;color:#3c9b9b">10K+</h1>
+                            <b>Products</b>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="col">
+                            <h1 style="border-bottom:2px solid #3c9b9b;color:#3c9b9b">350+</h1>
+                            <b>Costumers</b>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="pjesa3" style="margin-top:130px;">
+                        <div class="cardsContainer d-flex justify-content-center gap-4">
+                            <div class="card">
+                              <div class="cardImage">
+                              <img src="images/JBLH.png" alt="Avatar" style="width:100%">
+                              <i class="bi bi-heart"></i>
+                              <button style="padding: 5px 10px; background-color: #3c9b9b; color: white; border: none;">
+                                ADD TO CART
+                              </button>
+                            </div>
+                              <div class="container">
+                                <h5><b>JBL</b></h5>
+                                <span>200€</span>
+                                <div class="star">              
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="cardImage">
+                              <img src="images/legion3.png" alt="Avatar" style="width:100%">
+                              <i class="bi bi-heart"></i>
+                              <button style="padding: 5px 10px; background-color: #3c9b9b; color: white;border: none;">
+                                  ADD TO CART
+                              </button></div>
+                              <div class="container">
+                                <h5><b>Legion</b></h5>
+                                <span>200€</span>
+                                <div class="star">          
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="cardImage">
+                              <img src="images/Iphone14(5).png" alt="Avatar" style="width:100%">
+                              <i class="bi bi-heart"></i>
+                              <button style="padding: 5px 10px; background-color: #3c9b9b; color: white;border: none;">
+                                  ADD TO CART
+                              </button></div>
+                              <div class="container">
+                                <h5><b>Iphone</b></h5>
+                                <span>200€</span>
+                                <div class="star">       
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="pjesa4 row" style="margin-top:100px;">
+                        <div style="display: flex;flex-direction: column; justify-content: center;margin-top:100px;margin-bottom:80px;">
+                            <h3 style="text-align:center;border:1px solid gray; line-height:0px;"><b style="background:white;padding:5px;">Our Team</b></h3>
+                          </div>
+                        <div class="col text-center">
+                            <img src="images/Diarti.jpg" width="100" height="100" alt="" style="border-radius:50%;">
+                            <div class="col-auto my-1">
+                                <b>Blert Osmani</b>
+                                <p>Founder & CEO</p>
+                                <div class="row justify-content-center">
+                                    <i class="col-auto px-2 bi bi-linkedin"></i>
+                                    <i class="col-auto px-2 bi bi-github"></i>
+                                    <i class="col-auto px-2 bi bi-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <img src="images/Diarti.jpg" width="100" height="100" alt="" style="border-radius:50%;">
+                            <div class="col-auto my-1">
+                                <b>Diart Maraj</b>
+                                <p>Co-Founder</p>
+                                <div class="row justify-content-center">
+                                    <i class="col-auto px-2 bi bi-linkedin"></i>
+                                    <i class="col-auto px-2 bi bi-github"></i>
+                                    <i class="col-auto px-2 bi bi-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <img src="images/Diarti.jpg" width="100" height="100" alt="" style="border-radius:50%;">
+                            <div class="col-auto my-1">
+                                <b>Astrit Krasniqi</b>
+                                <p>Co-Founder</p>
+                                <div class="row justify-content-center">
+                                    <i class="col-auto px-2 bi bi-linkedin"></i>
+                                    <i class="col-auto px-2 bi bi-github"></i>
+                                    <i class="col-auto px-2 bi bi-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <img src="images/Diarti.jpg" width="100" height="100" alt="" style="border-radius:50%;">
+                            <div class="col-auto my-1">
+                                <b>Bujar Maksuti</b>
+                                <p>Co-Founder</p>
+                                <div class="row justify-content-center">
+                                    <i class="col-auto px-2 bi bi-linkedin"></i>
+                                    <i class="col-auto px-2 bi bi-github"></i>
+                                    <i class="col-auto px-2 bi bi-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <hr style="border:1px solid gray; margin-top:50px;">
-            <div class="pjesa3">
-            <!-- Pjesa 3 e aboutUS-->
-            
-            </div>  
-    </div>
-    </div>
  </body>
+
+ <script src="home.js"></script>
 </html>

@@ -41,6 +41,6 @@ rangeInput.forEach(input =>{
 $('.toggleTVFilters').on('click', function(){
     $('.TVsidebar').toggleClass('toggleTV');
 })
-$('.closeWatchFiltersBtn').on('click', function(){
+$('.closeTVFiltersBtn').on('click', function(){
     $('.TVsidebar').toggleClass('toggleTV');
 })

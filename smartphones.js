@@ -43,6 +43,6 @@ rangeInput.forEach(input =>{
 $('.togglePhoneFilters').on('click', function(){
     $('.SPsidebar').toggleClass('togglePhones');
 })
-$('.closeWatchFiltersBtn').on('click', function(){
+$('.closePhoneFiltersBtn').on('click', function(){
     $('.SPsidebar').toggleClass('togglePhones');
 })

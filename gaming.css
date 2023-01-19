@@ -24,6 +24,7 @@
 }
 .Gsidebar .Display{
     padding-top: 15px;
+    padding-bottom:30px;
 }
 
 
@@ -42,7 +43,6 @@
 
 .wrapper{
     width: 270px;
-    background: #fff;
     border-radius: 10px;
 }
 .wrapper header h5{

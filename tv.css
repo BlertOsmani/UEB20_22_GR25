@@ -42,8 +42,8 @@
 
 .wrapper{
     width: 270px;
-    background: #fff;
     border-radius: 10px;
+    padding-bottom:30px;
 }
 .wrapper header h5{
     font-weight: 600;
@@ -188,6 +188,10 @@ nav .searchContainer .searchButton{
 nav .searchContainer .searchButton:active{
     border-bottom: none;
 }
+.Display{
+    padding-bottom: 30px;
+}
+
 
 @media (max-width:1200px){
     .main .TVsidebar{

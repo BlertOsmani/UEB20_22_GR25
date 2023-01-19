@@ -41,6 +41,6 @@ rangeInput.forEach(input =>{
 $('.toggleGamingFilters').on('click', function(){
     $('.Gsidebar').toggleClass('toggleGaming');
 })
-$('.closeWatchFiltersBtn').on('click', function(){
+$('.closeGamingFiltersBtn').on('click', function(){
     $('.Gsidebar').toggleClass('toggleGaming');
 })
