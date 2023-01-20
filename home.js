@@ -47,6 +47,9 @@
         $('.smallScreenContainer').removeClass('mainMenu');
     })
 
+    $('.sendMessage').on('click', function(){
+        $('.BigBox').toggle(300);
+    })
 
 
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
