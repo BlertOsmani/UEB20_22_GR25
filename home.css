@@ -474,6 +474,69 @@ nav .userContainer .account .profileDropdown li:last-child{
     cursor: pointer;
     font-size:30px;
  }
+.socialMediaFooter div img{
+    width:25px;
+    height: 25px;
+    margin: 10px;
+}
+.socialMediaFooter div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+ 
+.contactInformationFooter div{
+    margin: 10px;
+    color: lightgray;
+}
+footer{
+    padding:0 6.5rem;
+    background:#28272c;
+    margin-top:40px;
+}
+footer .footerContainer{
+    padding:2rem 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+footer .footerContainer .col-4{
+    display: flex;
+    flex:100%;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+footer .footerContainer .aboutCompanyFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+}
+
+
+.footerBelow{
+    padding:1rem 6.5rem;
+    background-color: #1f1f21;
+    color: lightgray;
+}
+
+.footerBelow .col-4{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.footerBelow .row .col-4 a:first-child{
+    color:lightgray; 
+    border-right: 1px solid white; 
+    padding-right:10px;
+}
+.footerBelow .row .col-4 a{
+    color:lightgray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 
 
@@ -523,6 +586,31 @@ nav .userContainer .account .profileDropdown li:last-child{
         flex-direction: column;
         padding: 0 10px;
     }
+    .footerBelow{
+        padding: 2rem;
+    }
+    .footerBelow .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerBelow .row .col-8{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerBelow .row .col-4{
+        max-width: 100%;
+        margin-top:20px;
+        flex:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerBelow .row .col-4 a:first-child{
+        border:none;
+        padding: 0;
+    }
     .main .content{
         width:100%;
         margin: 0;
@@ -552,6 +640,9 @@ nav .userContainer .account .profileDropdown li:last-child{
         pointer-events: all;
         visibility: hidden;
     }
+    footer{
+        padding: 0 2rem;
+    }
 
     .main .content .carousel{
         width:100%;
@@ -564,7 +655,21 @@ nav .userContainer .account .profileDropdown li:last-child{
         overflow: auto;
         overscroll-behavior: contain;
     }
-    
+    footer .footerContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer .footerContainer .col-4{
+        max-width: 100%;
+        flex: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .footerContainer .aboutCompanyFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
 }
 
 @media (max-width: 992px){
