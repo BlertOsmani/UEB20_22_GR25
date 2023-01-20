@@ -78,7 +78,7 @@
        </div>
        <div class="small-contact">
         <p type="tel" class="phone"><i class="fa-solid fa-phone"></i>&nbsp;+383 49 473 342</p>
-        <a href="" class="sendMessage"><i class="fa-solid fa-message"></i>&nbsp;Send Message</a>
+        <button onclick="OpenPopup();" class="sendMessage"><i class="fa-solid fa-message"></i>&nbsp;Send Message</button>
        </div>
       </div>
       <!---->
@@ -99,10 +99,30 @@
            </div>
            <div class="contact">
             <p type="tel" class="phone"><i class="fa-solid fa-phone"></i>&nbsp;+383 49 473 342</p>
-                <a href="mailto:AlphaTech@gmail.com" class="sendMessage"><i class="fa-solid fa-message"></i>&nbsp;Send Message</a>
+                <button onclick="OpenPopup();" class="sendMessage"><i class="fa-solid fa-message"></i>&nbsp;Send Message</button>
            </div>
         </div>
     </header>
+    <div class="PopUpContainer" style="display: none;">  
+        <section class="PopUpContact">
+          <div class="title">
+              <h1>Contact Us</h1>
+              <i onclick="OpenPopup();" class="bi bi-x-lg"></i>
+          </div>
+          <form action="" method="post">
+              <div>
+                  <label for="Subject">Subject</label>
+                  <input type="Subject">
+              </div>
+              <div>
+                  <label for="Message">Your message</label>
+                  <textarea name="Message" id="" cols="30" rows="5"></textarea>
+              </div>
+              <button type="submit">Submit</button>
+          </form>
+      </section>
+      </div>
+
     <nav class="navigacioni">
         <div class="shopByCategory" style="visibility: hidden;">
             <h5><i class="fa-solid fa-bars sidebarBtn"></i>&nbsp;Shop By Category</h5>

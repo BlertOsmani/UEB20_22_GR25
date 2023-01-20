@@ -90,10 +90,10 @@
     padding-left: 5px;
 }
 .header div .header-links li a{
-    text-decoration: none;
     color: white;
     transition: 0.5s ease;
     font-size: 14px;
+    text-decoration: none;
 }
 .header div .header-links li a:hover{
     font-size: 15px;
@@ -112,9 +112,10 @@
     margin-bottom:0;
 }
 .header div .contact .sendMessage{
-    text-decoration: none;
     color:white;
     margin-left:20px;
+    border:none;
+    background: none;
     font-size:14px;
 }
 
@@ -148,7 +149,7 @@ nav .searchContainer{
     flex-direction: row;
     align-items: center;
     position:relative;
-    left:1.8rem;
+    left:1.7rem;
 }
 
 nav .searchContainer .searchInput{
@@ -315,7 +316,7 @@ nav .userContainer .account .profileDropdown li:last-child{
     position:sticky;
     top:30px;
     margin-top:30px;
-    margin-right: 4.5rem;
+    margin-right: 4.4rem;
     white-space: nowrap;
     height: min-content;
     width: 324.59px;
@@ -535,6 +536,80 @@ footer .footerContainer .aboutCompanyFooter{
     color:lightgray;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.PopUpContainer{
+    width: 100%;
+    top: 0;
+    position: fixed;
+    height: 100%;
+    z-index: 21;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.PopUpContact{
+    position: fixed;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index:20;
+    background:#3c9b9b;
+    color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.PopUpContact .title{
+    text-align: center;
+    margin-top:30px;
+    display: flex;
+    padding: 10px 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.PopUpContact .title i{
+    font-size:x-large;
+    cursor: pointer;
+}
+
+.PopUpContact form{
+    display: flex;
+    flex-direction:column;
+    padding: 10px 50px;
+}
+.PopUpContact form div{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+}
+.PopUpContact form div:nth-child(2){
+    margin-top:20px;
+}
+.PopUpContact form div input{
+    padding: 10px;
+    border-radius: 7.5px;
+    border: none;
+    outline: none;
+}
+.PopUpContact form div textarea{
+    padding: 10px;
+    border-radius: 7.5px;
+    border: none;
+    outline: none;
+}
+.PopUpContact form button{
+    border:none;
+    border-radius: 7.5px;
+    margin-top:40px;
+    color: white;
+    font-weight: bold;
+    background-color:#28272c;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 
@@ -759,6 +834,9 @@ footer .footerContainer .aboutCompanyFooter{
        margin-left: 50%;
        transform: translateX(-50%);
        padding: 0;
+    }
+    .PopUpContact{
+        width: auto;
     }
     .main .sidebar{
         position:fixed;

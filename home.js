@@ -6,6 +6,8 @@
     var sidebar = document.querySelector('.sidebar');
     var sidebarBtn = document.querySelector('.sidebarBtn');
     var smallScreenContainer = document.getElementById('smallScreenContainer');
+    var sendMessage = document.querySelector('.sendMessage');
+    var PopUpContact = document.querySelector('.PopUpContainer');
 
     function Albanian(){
         albanian.classList.add('active');
@@ -47,9 +49,14 @@
         $('.smallScreenContainer').removeClass('mainMenu');
     })
 
-    $('.sendMessage').on('click', function(){
-        $('.BigBox').toggle(300);
-    })
+   function OpenPopup(){
+        if(PopUpContact.style.display ==="none"){
+            PopUpContact.style.display ="block";
+        }
+        else{
+            PopUpContact.style.display = "none";
+        }
+    }
 
 
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');

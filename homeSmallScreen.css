@@ -124,10 +124,12 @@
     margin:0;
     color: white;
 }
-.header div .smallScreenContainer .small-contact a{
+.header div .smallScreenContainer .small-contact button{
    text-decoration: none;
    color:white;
    margin-left: 70px;
+   background: none;
+   border: none;
 }
 .header div .smallScreenContainer .closeMainMenu .closeMainMenuBtn{
     color:white;
