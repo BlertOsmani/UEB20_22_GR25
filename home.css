@@ -517,7 +517,7 @@ nav .userContainer .account .profileDropdown li:last-child{
     
 
 }
-@media (max-width: 1200px){
+@media (max-width: 1300px){
     .main{
         display: flex;
         flex-direction: column;
@@ -678,7 +678,5 @@ nav .userContainer .account .profileDropdown li:last-child{
         transition: 0.2s ease-in;
         pointer-events: all;
         visibility: hidden;
-    }
-    
-    
+    }   
 }
