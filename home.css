@@ -517,7 +517,7 @@ nav .userContainer .account .profileDropdown li:last-child{
     
 
 }
-@media (max-width: 1200px){
+@media (max-width: 1280px){
     .main{
         display: flex;
         flex-direction: column;

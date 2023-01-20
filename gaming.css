@@ -189,7 +189,7 @@ nav .searchContainer .searchButton:active{
     border-bottom: none;
 }
 
-@media (max-width:1200px){
+@media (max-width:1280px){
     .main .Gsidebar{
         position: fixed;
         top: 0;

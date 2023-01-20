@@ -42,7 +42,6 @@
 
 .wrapper{
     width: 270px;
-    background: #fff;
     border-radius: 10px;
 }
 .wrapper header h5{
@@ -189,7 +188,7 @@ nav .searchContainer .searchButton:active{
     border-bottom: none;
 }
 
-@media (max-width:1200px){
+@media (max-width:1280px){
     .main .Asidebar{
         position: fixed;
         top: 0;

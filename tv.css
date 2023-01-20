@@ -193,7 +193,7 @@ nav .searchContainer .searchButton:active{
 }
 
 
-@media (max-width:1200px){
+@media (max-width:1280px){
     .main .TVsidebar{
         position: fixed;
         top: 0;

@@ -41,6 +41,6 @@ rangeInput.forEach(input =>{
 $('.toggleAccessoriesFilters').on('click', function(){
     $('.Asidebar').toggleClass('toggleAccessories');
 })
-$('.closeWatchFiltersBtn').on('click', function(){
+$('.closeAccessoriesFiltersBtn').on('click', function(){
     $('.Asidebar').toggleClass('toggleAccessories');
 })
