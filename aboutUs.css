@@ -1,31 +1,29 @@
-    /*About Us */
+/*About Us */
 
-    .pjesa4{
-        display: flex;
-        flex-wrap: wrap;
-    }
+.pjesa4 {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-    @media (max-width: 720px){
-        .pjesa4 .col{
-            flex:50%;
-            max-width: 50%;
-            margin-top:50px;
-        }
-        .pjesa2 .col{
-            flex:50%;
-            max-width: 50%;
-        }
-        .pjesa1 .col-9{
-            flex: 100%;
-            max-width: 100%;
-            text-align: center;
-        }
-        .pjesa1 .col-3{
-            flex: 100%;
-            margin-top:50px;
-            max-width: 100%;
-            text-align: center;
-        }
-    }
-
-
+@media (max-width: 720px) {
+  .pjesa4 .col {
+    flex: 50%;
+    max-width: 50%;
+    margin-top: 50px;
+  }
+  .pjesa2 .col {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .pjesa1 .col-9 {
+    flex: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .pjesa1 .col-3 {
+    flex: 100%;
+    margin-top: 50px;
+    max-width: 100%;
+    text-align: center;
+  }
+}

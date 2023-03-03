@@ -1,310 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css" integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="productDetails.css">
-    <link rel="stylesheet" href="homeSmallScreen.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css"
+      integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="productDetails.css" />
+    <link rel="stylesheet" href="homeSmallScreen.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-<title>Tech Store</title>
-</head>
-<body>
+    <title>Tech Store</title>
+  </head>
+  <body>
     <header class="header" id="header">
-        <div>
-           <div class="logo-container">
-                <a href="/home.html" class="logo item"><img src="images/alpha.png" alt="Alpha"></a>
-                <select name="" id="" class="shtetet item">
-                    <option value="Kosovë">Kosovë</option>
-                    <option value="Shqipëri">Shqipëri</option>
-                    <option value="Maqedoni">Maqedoni</option>
-                </select>
-                <!--Pseudo Select-->
-                <select name="" id="width_tmp_select" style="display: none;">
-                    <option value="" id="width_tmp_option"></option>
-                </select>
-                <!--Pseudo Select-->
-                <div style="color:#595e5e;padding:0;margin:0;">
-                    |
-                </div>
-                <div class="gjuha item">
-                    <button class="albanian active" onclick="Albanian()">AL</button>
-                    <button class="english" onclick="English()">EN</button>
-                </div>
-           </div> 
-           <div class="openHeaderContainer">
-            <i class="fa-solid fa-bars openMainMenu" style="font-size:20px; color:white;cursor: pointer;"></i>
+      <div>
+        <div class="logo-container">
+          <a href="/home.html" class="logo item"
+            ><img src="images/alpha.png" alt="Alpha"
+          /></a>
+          <select name="" id="" class="shtetet item">
+            <option value="Kosovë">Kosovë</option>
+            <option value="Shqipëri">Shqipëri</option>
+            <option value="Maqedoni">Maqedoni</option>
+          </select>
+          <!--Pseudo Select-->
+          <select name="" id="width_tmp_select" style="display: none">
+            <option value="" id="width_tmp_option"></option>
+          </select>
+          <!--Pseudo Select-->
+          <div style="color: #595e5e; padding: 0; margin: 0">|</div>
+          <div class="gjuha item">
+            <button class="albanian active" onclick="Albanian()">AL</button>
+            <button class="english" onclick="English()">EN</button>
           </div>
-          <!--This container opens for small screens-->
+        </div>
+        <div class="openHeaderContainer">
+          <i
+            class="fa-solid fa-bars openMainMenu"
+            style="font-size: 20px; color: white; cursor: pointer"
+          ></i>
+        </div>
+        <!--This container opens for small screens-->
         <div class="smallScreenContainer">
           <div class="closeMainMenu">
-            <i class="bi bi-x-lg closeMainMenuBtn" style="font-size:30px;cursor: pointer;position: absolute;left:50%; "></i>
+            <i
+              class="bi bi-x-lg closeMainMenuBtn"
+              style="
+                font-size: 30px;
+                cursor: pointer;
+                position: absolute;
+                left: 50%;
+              "
+            ></i>
           </div>
           <div class="headerSearchContainer">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="search" class="searchInput" placeholder="Search products...">
+            <input
+              type="search"
+              class="searchInput"
+              placeholder="Search products..."
+            />
             <button type="submit" class="searchButton">Search</button>
           </div>
           <div class="small-header-links">
             <li><a href="aboutUs.html">About Us</a></li>
-            <div style="color:#595e5e;padding:0;margin:0"></div>
+            <div style="color: #595e5e; padding: 0; margin: 0"></div>
             <li><a href="">Today's deals</a></li>
-            <div style="color:#595e5e;padding:0;margin:0"></div>
+            <div style="color: #595e5e; padding: 0; margin: 0"></div>
             <li><a href="">Service Center</a></li>
-            <div style="color:#595e5e;padding:0;margin:0"></div>
+            <div style="color: #595e5e; padding: 0; margin: 0"></div>
             <li><a href="">Sell</a></li>
-            <div style="color:#595e5e;padding:0;margin:0"></div>
+            <div style="color: #595e5e; padding: 0; margin: 0"></div>
             <li><a href="">Trade</a></li>
-            <div style="color:#595e5e;padding:0;margin:0"></div>
+            <div style="color: #595e5e; padding: 0; margin: 0"></div>
             <li><a href="">Help</a></li>
-       </div>
-       <div class="small-contact">
-        <p type="tel" class="phone"><i class="fa-solid fa-phone"></i>&nbsp;+383 49 473 342</p>
-        <button onclick="OpenPopup();" class="sendMessage"><i class="fa-solid fa-message"></i>&nbsp;Send Message</button>
-       </div>
-      </div>
-      <!---->
+          </div>
+          <div class="small-contact">
+            <p type="tel" class="phone">
+              <i class="fa-solid fa-phone"></i>&nbsp;+383 49 473 342
+            </p>
+            <button onclick="OpenPopup();" class="sendMessage">
+              <i class="fa-solid fa-message"></i>&nbsp;Send Message
+            </button>
+          </div>
+        </div>
+        <!---->
 
         <!--Big Screen Container-->
-           <div class="header-links">
-                <li><a href="aboutUs.html">About Us</a></li>
-                <div style="color:#595e5e;padding:0;margin:0">|</div>
-                <li><a href="">Today's deals</a></li>
-                <div style="color:#595e5e;padding:0;margin:0">|</div>
-                <li><a href="">Service Center</a></li>
-                <div style="color:#595e5e;padding:0;margin:0">|</div>
-                <li><a href="">Sell</a></li>
-                <div style="color:#595e5e;padding:0;margin:0">|</div>
-                <li><a href="">Trade</a></li>
-                <div style="color:#595e5e;padding:0;margin:0">|</div>
-                <li><a href="">Help</a></li>
-           </div>
-           <div class="contact">
-            <p type="tel" class="phone"><i class="fa-solid fa-phone"></i>&nbsp;+383 49 473 342</p>
-                <button onclick="OpenPopup();" class="sendMessage"><i class="fa-solid fa-message"></i>&nbsp;Send Message</button>
-           </div>
+        <div class="header-links">
+          <li><a href="aboutUs.html">About Us</a></li>
+          <div style="color: #595e5e; padding: 0; margin: 0">|</div>
+          <li><a href="">Today's deals</a></li>
+          <div style="color: #595e5e; padding: 0; margin: 0">|</div>
+          <li><a href="">Service Center</a></li>
+          <div style="color: #595e5e; padding: 0; margin: 0">|</div>
+          <li><a href="">Sell</a></li>
+          <div style="color: #595e5e; padding: 0; margin: 0">|</div>
+          <li><a href="">Trade</a></li>
+          <div style="color: #595e5e; padding: 0; margin: 0">|</div>
+          <li><a href="">Help</a></li>
         </div>
-    </header>
-    <div class="PopUpContainer" style="display: none;">  
-        <section class="PopUpContact">
-          <div class="title">
-              <h1>Contact Us</h1>
-              <i onclick="OpenPopup();" class="bi bi-x-lg"></i>
-          </div>
-          <form action="" method="post">
-              <div>
-                  <label for="Subject">Subject</label>
-                  <input type="Subject">
-              </div>
-              <div>
-                  <label for="Message">Your message</label>
-                  <textarea name="Message" id="" cols="30" rows="5"></textarea>
-              </div>
-              <button type="submit">Submit</button>
-          </form>
-      </section>
+        <div class="contact">
+          <p type="tel" class="phone">
+            <i class="fa-solid fa-phone"></i>&nbsp;+383 49 473 342
+          </p>
+          <button onclick="OpenPopup();" class="sendMessage">
+            <i class="fa-solid fa-message"></i>&nbsp;Send Message
+          </button>
+        </div>
       </div>
+    </header>
+    <div class="PopUpContainer" style="display: none">
+      <section class="PopUpContact">
+        <div class="title">
+          <h1>Contact Us</h1>
+          <i onclick="OpenPopup();" class="bi bi-x-lg"></i>
+        </div>
+        <form action="" method="post">
+          <div>
+            <label for="Subject">Subject</label>
+            <input type="Subject" />
+          </div>
+          <div>
+            <label for="Message">Your message</label>
+            <textarea name="Message" id="" cols="30" rows="5"></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </div>
 
     <nav class="navigacioni">
-        <div class="shopByCategory" style="visibility: hidden;">
-            <h5><i class="fa-solid fa-bars sidebarBtn"></i>&nbsp;Shop By Category</h5>
+      <div class="shopByCategory" style="visibility: hidden">
+        <h5>
+          <i class="fa-solid fa-bars sidebarBtn"></i>&nbsp;Shop By Category
+        </h5>
+      </div>
+      <div class="searchContainer">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="search"
+          class="searchInput"
+          placeholder="Search products..."
+        />
+        <button type="submit" class="searchButton">Search</button>
+      </div>
+      <div class="userContainer">
+        <a href="" class="userContainerItems heart"
+          ><i class="fa-solid fa-heart"></i
+        ></a>
+        <a href="" class="userContainerItems cart"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
+        <div class="account userContainerItems">
+          <img src="images/Diarti.jpg" alt="" class="Accountlogo" />
+          <div class="personalInformation">
+            <p>Diart</p>
+            <span>23 Points</span>
+          </div>
+          <i class="fa-solid fa-caret-down" onclick="openDropdown()"></i>
+          <div class="profileDropdown" style="display: none">
+            <li>
+              <a href="" class="User"
+                ><i class="fa-solid fa-user"></i>&nbsp;Go to profile</a
+              ><i class="fa-solid fa-chevron-right"></i>
+            </li>
+            <li>
+              <a href="" class="OrderHistory"
+                ><i class="fa-solid fa-clock-rotate-left"></i>&nbsp;Order
+                history</a
+              ><i class="fa-solid fa-chevron-right"></i>
+            </li>
+            <li>
+              <a href="" class="Return"
+                ><i class="fa-solid fa-right-left"></i>&nbsp;Return order</a
+              ><i class="fa-solid fa-chevron-right"></i>
+            </li>
+            <hr />
+            <li>
+              <a href="" class="Logout"
+                ><i class="fa-solid fa-right-from-bracket"></i>&nbsp;Log out</a
+              >
+            </li>
+          </div>
         </div>
-        <div class="searchContainer">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="search" class="searchInput" placeholder="Search products...">
-            <button type="submit" class="searchButton">Search</button>
-        </div>
-        <div class="userContainer">
-            <a href="" class="userContainerItems heart"><i class="fa-solid fa-heart"></i></a>
-            <a href="" class="userContainerItems cart"><i class="fa-solid fa-cart-shopping"></i></a>
-            <div class="account userContainerItems">
-                <img src="images/Diarti.jpg" alt="" class="Accountlogo">
-                <div class="personalInformation">
-                    <p>Diart</p>
-                    <span>23 Points</span>
-                </div>
-                <i class="fa-solid fa-caret-down" onclick="openDropdown()"></i>
-                <div class="profileDropdown" style="display:none">
-                    <li><a href="" class="User"><i class="fa-solid fa-user"></i>&nbsp;Go to profile</a><i class="fa-solid fa-chevron-right"></i></li>
-                    <li><a href="" class="OrderHistory"><i class="fa-solid fa-clock-rotate-left"></i>&nbsp;Order history</a><i class="fa-solid fa-chevron-right"></i></li>
-                    <li><a href="" class="Return"><i class="fa-solid fa-right-left"></i>&nbsp;Return order</a><i class="fa-solid fa-chevron-right"></i></li>
-                    <hr>
-                    <li><a href="" class="Logout"><i class="fa-solid fa-right-from-bracket"></i>&nbsp;Log out</a></li>
-                </div>
-            </div>
-        </div>
+      </div>
     </nav>
     <div class="main">
-        <div class="content my-5" >
-            <div class="row productContainer">
-                <div class="col-6 row"> 
-                    <img src="images/Canon_camera (1).png" alt="Canon">
+      <div class="content my-5">
+        <div class="row productContainer">
+          <div class="col-6 row">
+            <img src="images/Canon_camera (1).png" alt="Canon" />
+          </div>
+          <div class="col-5 productDescription" style="text-align: left">
+            <div class="titleContainer p-0">
+              <div class="productName p-0">
+                <h1><b>Canon EOS R6 Mark II RF24-105mm</b></h1>
+              </div>
+              <div class="row col-auto align-items-center p-0">
+                <div class="col-auto">
+                  <h4>2800€</h4>
+                  <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
                 </div>
-                <div class="col-5 productDescription " style="text-align: left;">
-                    <div class="titleContainer p-0">
-                        <div class="productName p-0"> 
-                            <h1><b>Canon EOS R6 Mark II RF24-105mm</b></h1>
-                        </div>
-                        <div class="row col-auto align-items-center p-0 ">
-                            <div class="col-auto ">
-                                <h4>2800€</h4>
-                                <div class="star">              
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                  </div>
-                            </div>
-                            <div class="col-auto align-items-center d-flex" style="flex-direction: column; margin-left: 10rem;" >
-                                <h6><i class="bi bi-heart"></i>&nbsp;Wish List</h6>
-                                <h6>857 reviews</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="actions">
-                        <div class="row col-auto  px-0 align-items-baseline">
-                            <div class="col-auto  ">
-                                <label for="" class=""><b>Color:</b> Black</label>
-                                <div class="colorsContainer row " style="padding-left: 12px;">
-                                    <div class="colors col-auto px-1 mx-1" style="margin-left: 500px;"></div>
-                                    <div class="colors col-auto px-1 mx-1"></div>
-                                    <div class="colors col-auto px-1 mx-1"></div>
-                                    <div class="colors col-auto px-1 mx-1"></div>
-                                    <div class="colors col-auto px-1 mx-1"></div>
-                                </div>
-                            </div>
-                            <div class="row col-auto align-items-center" style=" margin-left: 8.7rem;">
-                                <label for="" class="col-auto m-0"><b>Quantity:</b></label>
-                                <input type="number"  min="0" max="20" style="width: 80px; border: none;" class="col">
-                            </div>
-                        </div>
-                        <div class="AddToCart my-5 p-0">
-                            <button style="padding: 15px 25px; background-color: #3c9b9b; color: white; border: none;">
-                                ADD TO CART
-                            </button>
-
-                        </div>
-                    </div>
-                    <div class="details p-0">
-                        <div class="row col-auto p-0">
-                            <div class="col-2">
-                                <b>About</b>
-                            </div>
-                            <div class="col-10">
-                                <p>
-                                    High image quality featuring a new 24.2 megapixel full-frame CMOS sensor
-                                    DIGIC X Image Processor with an ISO range of 100-102400, expandable to 204800
-                                    High-speed continuous shooting of up to 12 fps with mechanical shutter and up to 40 fps electronic (silent) shutter, RAW burst mode and pre-shooting captures up to approx. 30 fps
-                                    Dual Pixel CMOS AF II covering up to 100% x 100% area with 1,053 AF zones
-                                    Automatic subject detection of people, animals, and vehicles using deep learning technology with new subjects to detect including aircraft, trains, and horses
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="row col-auto p-0 ">
-                            <div class="col-2">
-                                <b>Specs</b>
-                            </div>
-                            <div class="col-10">
-                                <p>
-                                    <b>Brand</b>	Canon;
-                                    <b>Model Name</b>	Canon EOS R6 Mark II RF24-105mm F4 L IS USM KIT;
-                                    <b>Form Factor</b>	Mirrorless;
-                                    <b>Effective Still Resolution</b>	24.2;
-                                    <b>Special</b> Feature	Travel;
-                                    <b>Color</b>	Black;
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
+                <div
+                  class="col-auto align-items-center d-flex"
+                  style="flex-direction: column; margin-left: 10rem"
+                >
+                  <h6><i class="bi bi-heart"></i>&nbsp;Wish List</h6>
+                  <h6>857 reviews</h6>
                 </div>
+              </div>
             </div>
+            <div class="actions">
+              <div class="row col-auto px-0 align-items-baseline">
+                <div class="col-auto">
+                  <label for="" class=""><b>Color:</b> Black</label>
+                  <div class="colorsContainer row" style="padding-left: 12px">
+                    <div
+                      class="colors col-auto px-1 mx-1"
+                      style="margin-left: 500px"
+                    ></div>
+                    <div class="colors col-auto px-1 mx-1"></div>
+                    <div class="colors col-auto px-1 mx-1"></div>
+                    <div class="colors col-auto px-1 mx-1"></div>
+                    <div class="colors col-auto px-1 mx-1"></div>
+                  </div>
+                </div>
+                <div
+                  class="row col-auto align-items-center"
+                  style="margin-left: 8.7rem"
+                >
+                  <label for="" class="col-auto m-0"><b>Quantity:</b></label>
+                  <input
+                    type="number"
+                    min="0"
+                    max="20"
+                    style="width: 80px; border: none"
+                    class="col"
+                  />
+                </div>
+              </div>
+              <div class="AddToCart my-5 p-0">
+                <button
+                  style="
+                    padding: 15px 25px;
+                    background-color: #3c9b9b;
+                    color: white;
+                    border: none;
+                  "
+                >
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+            <div class="details p-0">
+              <div class="row col-auto p-0">
+                <div class="col-2">
+                  <b>About</b>
+                </div>
+                <div class="col-10">
+                  <p>
+                    High image quality featuring a new 24.2 megapixel full-frame
+                    CMOS sensor DIGIC X Image Processor with an ISO range of
+                    100-102400, expandable to 204800 High-speed continuous
+                    shooting of up to 12 fps with mechanical shutter and up to
+                    40 fps electronic (silent) shutter, RAW burst mode and
+                    pre-shooting captures up to approx. 30 fps Dual Pixel CMOS
+                    AF II covering up to 100% x 100% area with 1,053 AF zones
+                    Automatic subject detection of people, animals, and vehicles
+                    using deep learning technology with new subjects to detect
+                    including aircraft, trains, and horses
+                  </p>
+                </div>
+              </div>
+
+              <div class="row col-auto p-0">
+                <div class="col-2">
+                  <b>Specs</b>
+                </div>
+                <div class="col-10">
+                  <p>
+                    <b>Brand</b> Canon; <b>Model Name</b> Canon EOS R6 Mark II
+                    RF24-105mm F4 L IS USM KIT; <b>Form Factor</b> Mirrorless;
+                    <b>Effective Still Resolution</b> 24.2;
+                    <b>Special</b> Feature Travel; <b>Color</b> Black;
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    
-        
+
     <footer>
       <div class="footerContainer">
         <div class="col-4 aboutCompanyFooter">
           <h2>More about the company</h2>
-          <p style="color:lightgray;" class="my-4">ALPHA Tech is a young startup and the brainchild of a team of FIEK Students. .  Our mantra is "Technology for the masses" which we can achieve by making delivery of IT Products at an affordable price within 48 Hours anywhere in Kosovo and Albania supported by a strong logistics backbone. We design, build and customize products and services to satisfy a range of customer requirements. From corporate, government and professional service needs of educational institutes and industries, to those of consumers at home, we do business directly with customers, one at a time, and believe we do it better than anyone who has to offer.</p>
+          <p style="color: lightgray" class="my-4">
+            ALPHA Tech is a young startup and the brainchild of a team of FIEK
+            Students. . Our mantra is "Technology for the masses" which we can
+            achieve by making delivery of IT Products at an affordable price
+            within 48 Hours anywhere in Kosovo and Albania supported by a strong
+            logistics backbone. We design, build and customize products and
+            services to satisfy a range of customer requirements. From
+            corporate, government and professional service needs of educational
+            institutes and industries, to those of consumers at home, we do
+            business directly with customers, one at a time, and believe we do
+            it better than anyone who has to offer.
+          </p>
         </div>
         <div class="col-4">
           <h2>Keep Connected</h2>
           <div class="socialMediaFooter my-4">
             <div>
-              <a href="https://facebook.com" target="_blank" style="text-decoration: none;"><img src="images/facebook.png" alt="">
-              <span style="color: lightgray;">Like us on facebook</span></a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                style="text-decoration: none"
+                ><img src="images/facebook.png" alt="" />
+                <span style="color: lightgray">Like us on facebook</span></a
+              >
             </div>
             <div>
-              <a href="https://instagram.com" target="_blank" style="text-decoration: none;"><img src="images/instagram.png" alt="">
-              <span style="color: lightgray;">Follow us on instagram</span></a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                style="text-decoration: none"
+                ><img src="images/instagram.png" alt="" />
+                <span style="color: lightgray">Follow us on instagram</span></a
+              >
             </div>
             <div>
-              <a href="https://linkedin.com" target="_blank" style="text-decoration: none;"><img src="images/linkedin.png" alt="">
-              <span style="color: lightgray;">Contact us on linkedin</span>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                style="text-decoration: none"
+                ><img src="images/linkedin.png" alt="" />
+                <span style="color: lightgray">Contact us on linkedin</span>
               </a>
             </div>
             <div>
-              <a href="https://twitter.com" target="_blank" style="text-decoration: none;"><img src="images/twitter.png" alt="">
-              <span style="color: lightgray;">Follow us on twitter</span></a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                style="text-decoration: none"
+                ><img src="images/twitter.png" alt="" />
+                <span style="color: lightgray">Follow us on twitter</span></a
+              >
             </div>
             <div>
-              <a href="https://pinterest.com" target="_blank" style="text-decoration: none;"><img src="images/pinterest.png" alt="">
-              <span style="color: lightgray;">Follow us on pinterest</span></a>
-            </div>   
+              <a
+                href="https://pinterest.com"
+                target="_blank"
+                style="text-decoration: none"
+                ><img src="images/pinterest.png" alt="" />
+                <span style="color: lightgray">Follow us on pinterest</span></a
+              >
+            </div>
           </div>
         </div>
         <div class="col-4">
           <h2>Contact information</h2>
-            <div class="my-4 contactInformationFooter" style="color: lightgray;">
-              <div>
-                <a href="/home.html" class="logo item"><img src="images/alphaNoBG.png" style="width: 200px;" alt="Alpha"></a>
-              </div>
-              <div>
-                <i class="bi bi-envelope"></i>&nbsp;
-                <span>AlphaTech@gmail.com</span>
-              </div>
-              <div>
-                <i class="bi bi-telephone-fill"></i> &nbsp;
-                <span>+383 49 473 342</span>
-              </div>
-              <div></div>
+          <div class="my-4 contactInformationFooter" style="color: lightgray">
+            <div>
+              <a href="/home.html" class="logo item"
+                ><img
+                  src="images/alphaNoBG.png"
+                  style="width: 200px"
+                  alt="Alpha"
+              /></a>
             </div>
+            <div>
+              <i class="bi bi-envelope"></i>&nbsp;
+              <span>AlphaTech@gmail.com</span>
+            </div>
+            <div>
+              <i class="bi bi-telephone-fill"></i> &nbsp;
+              <span>+383 49 473 342</span>
+            </div>
+            <div></div>
+          </div>
         </div>
       </div>
-  </footer>
-  <section class="footerBelow">
-    <div class="row">
-      <div class="col-8">
-        © Copyright 2023 | Alpha Tech
+    </footer>
+    <section class="footerBelow">
+      <div class="row">
+        <div class="col-8">© Copyright 2023 | Alpha Tech</div>
+        <div class="col-4">
+          <a href="">Privacy Policy</a>
+          <a href="">Terms & Conditions</a>
+        </div>
       </div>
-      <div class="col-4">
-        <a href="">Privacy Policy</a>
-        <a href="">Terms & Conditions</a>
-      </div>
-    </div>
-  </section>
-    </body>
-    <script src="home.js"></script>
-    </html>
+    </section>
+  </body>
+  <script src="home.js"></script>
+</html>

@@ -1,64 +1,62 @@
 .productName h1 {
-    font-weight: bolder;
-    font-size:60px;
+  font-weight: bolder;
+  font-size: 60px;
 }
-.colorsContainer .colors{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: black;
+.colorsContainer .colors {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
 }
-.actions{
-    margin-top: 30px;
-    
+.actions {
+  margin-top: 30px;
 }
-.details{
-    margin-top: 50px;
+.details {
+  margin-top: 50px;
 }
-.content .row .col-6{
-    margin-right:60px;
-}
-
-.main .content .productContainer .col-6 img{
-    width: 100%; 
-    height: max-content;
+.content .row .col-6 {
+  margin-right: 60px;
 }
 
-
-@media(max-width:1300px){
-    .main .content{
-        padding:0 1rem;
-    }
-    .main .content .productContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .main .content .productContainer .col-6{
-        flex:100%;
-        display: flex;
-        position: relative;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-    }
-    .main .content .productContainer .col-6 img{
-        height:min-content;
-    }
-
-    .main .content .productContainer .col-5{
-        max-width: 100%;
-        flex: 100%;
-    }
+.main .content .productContainer .col-6 img {
+  width: 100%;
+  height: max-content;
 }
 
-@media (max-width: 720px){
-    .main .content .productContainer .col-6{
-        flex:100%;
-        max-width: 90%;
-        display: flex;
-        position: relative;
-        justify-content: center;
-    }
+@media (max-width: 1300px) {
+  .main .content {
+    padding: 0 1rem;
+  }
+  .main .content .productContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .content .productContainer .col-6 {
+    flex: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  .main .content .productContainer .col-6 img {
+    height: min-content;
+  }
+
+  .main .content .productContainer .col-5 {
+    max-width: 100%;
+    flex: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .main .content .productContainer .col-6 {
+    flex: 100%;
+    max-width: 90%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
 }
